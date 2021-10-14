@@ -1,13 +1,14 @@
-const scoutObjOne = [
+export const scoutObjOne = () => {
+    const data =[
     {id: 1, 
-    sailorName: "Sailor Moon", 
-    firstName: "Usagi/Serena", 
-    lastName: "Tsukino", 
-    age: 14, 
-    description: "Main protagonist and the Sailor Guardians' leader. She is the Guardian of love and justice.", 
-    imgStart:'', 
-    img: 'images/moon.jpeg', 
-    alt: "Sailor Moon"},
+        sailorName: "Sailor Moon", 
+        firstName: "Usagi/Serena", 
+        lastName: "Tsukino", 
+        age: 14, 
+        description: "Main protagonist and the Sailor Guardians' leader. She is the Guardian of love and justice.", 
+        imgStart:'', 
+        img: 'images/moon.jpeg', 
+        alt: "Sailor Moon"},
     {id: 2, 
         sailorName: "Sailor Mercury", 
         firstName: "Ami/Amy", 
@@ -27,6 +28,17 @@ const scoutObjOne = [
         img: 'images/mars.jpeg', 
         alt: "Sailor Mercury"},
 
-];
+    ];
+
+    return (
+        <div className="sailorscouts">
+            {data.map((sailorscout) => (
+                <div className="sailorscout">{sailorscout}</div>
+            ))}
+        </div>
+    );
+};
+
+
 
 
