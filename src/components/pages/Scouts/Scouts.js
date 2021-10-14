@@ -3,11 +3,6 @@ import ScoutsSection from '../../ScoutsSection';
 import {scoutObjOne} from './ScoutsData';
 
 function Scouts() {
-    // return (
-    //     <>
-    //         <ScoutsSection {...scoutObjOne} />
-    //     </>
-    // )
     return (
         <ul>
           {scoutObjOne.map(person => {
